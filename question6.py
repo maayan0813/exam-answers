@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score
 # Load dataset
 data = load_breast_cancer()
 X, y = data.data, data.target
-feature_names = data.feature_names  # Feature names
+feature_names = data.feature_names  
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Train models with all features (50 iterations)
@@ -90,6 +90,9 @@ plt.gca().invert_yaxis()
 
 plt.tight_layout()
 plt.show()
+
+
+
 
 
 
